@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>Calculus 1 Guide</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="content-wrap">
+
+            <!-- HEADER -->
+            <header>
+                <h1>Calculus 1 Guide</h1>
+            </header>
+
+            <!-- DERIVATIVE RULES-->             
+            <h3>Derivative Rules</h3>
+            <section class="derivative-rules">
+                <div class="derivative-rules-gridwrap">
+                    <div class="top-grid-wrap">
+                        <div class="const">
+                            <h5>Derivative of a Constant</h5>
+                            <p>\( \frac{d}{dx}c = 0 \)</p>
+                            <p>\( \left(c\right)^{'} = 0 \)</p>
+                        </div>
+                        <div class="const-mult-rule">
+                            <h5>The Constant Multiple Rule</h5>
+                            <p>\( \frac{d}{dx}cf(x) = c\left(\frac{d}{dx}f(x)\right) \)</p>
+                            <p>\( \left(cf(x)\right)^{'} = cf^{'}(x) \)</p>
+                        </div>
+                        <div class="power-rule">
+                            <h5>The Power Rule</h5>
+                            <p>\( \frac{d}{dx}\left(x^n\right) = nx^{n-1} \)</p>
+                            <p>\( \frac{d}{dx}\left(ax^n\right) = nax^{n-1} \)</p>
+                        </div>
+                    </div>    
+                    <div class="sum-diff-rule">
+                        <h5>The Sum and Difference Rules</h5>
+                        <p>\( \frac{d}{dx}\left(f(x) \pm g(x)\right) = \frac{d}{dx}f(x) \pm \frac{d}{dx}g(x) \)</p>
+                        <p>\( (f(x) \pm g(x))^{'} = f^{'}(x) \pm g^{'}(x) \)</p>
+                    </div>
+                    <div class="product-rule">
+                        <h5>The Product Rule</h5>
+                        <p>\( \frac{d}{dx}\left(f(x)g(x)\right) = \left(\frac{d}{dx}f(x)\right)g(x) + \left(\frac{d}{dx}g(x)\right)f(x) \)</p>
+                        <p>\( (f(x)g(x))^{'} = f^{'}(x)g(x) + g^{'}(x)f(x) \)</p>
+                    </div>
+                    <div class="quotient-rule">
+                        <h5>The Quotient Rule</h5>
+                        <p>\( \frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{g(x)\left(\frac{d}{dx}f(x)\right) - f(x)\left(\frac{d}{dx}g(x)\right)}{g(x)^2} \)</p>
+                        <p>\( \left(\frac{f(x)}{g(x)}\right)^{'} = \frac{g(x)f^{'}(x)-f(x)g^{'}(x)}{g(x)^2} \)</p>
+                    </div>
+                    <div class="chain-rule">
+                        <h5>The Chain Rule</h5>
+                        <p>\( \frac{d}{dx}f(g(x)) = \left(\frac{d}{dx}g(x)\right)\left(\frac{d}{dx}f(u)\right) \space where \space u = f(x) \)</p>
+                        <p>\( (f(g(x)))^{'} = g^{'}(x)f^{'}(g(x)) \)</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SPECIAL DERIVATIVES -->
+            <h3>Trigonometric Derivatives</h3>
+            <section class="trig-derivatives">
+                <div class="trig-rules-gridwrap">
+
+                    <!-- BASE -->
+                    <div class="trig-label trigfunc"><h5>Basic & Reciprocal Functions</h5></div>
+                    <div class="sin trigfunc"><p>\( \frac{d}{dx}\sin(x) = \cos(x) \)</p></div>
+                    <div class="cos trigfunc"><p>\( \frac{d}{dx}\cos(x) = -\sin(x) \)</p></div>
+                    <div class="tan trigfunc"><p>\( \frac{d}{dx}\tan(x) = \sec^{2}(x) \)</p></div>
+                    <div class="csc trigfunc"><p>\( \frac{d}{dx}\csc(x) = -\csc(x)\cot(x) \)</p></div>
+                    <div class="sec trigfunc"><p>\( \frac{d}{dx}\sec(x) = \sec(x)\tan(x) \)</p></div>
+                    <div class="cot trigfunc"><p>\( \frac{d}{dx}\cot(x) = -\csc^{2}(x) \)</p></div>
+
+                    <!--  INVERSE -->
+                    <div class="trig-label trigfunc"><h5>Inverse Functions</h5></div>
+                    <div class="arcsin trigfunc"><p>\( \frac{d}{dx}\arcsin(x) = \frac{1}{\sqrt{1-x^2}} \)</p></div>
+                    <div class="arccos trigfunc"><p>\( \frac{d}{dx}\arccos(x) = \frac{-1}{\sqrt{1-x^2}} \)</p></div>
+                    <div class="arctan trigfunc"><p>\( \frac{d}{dx}\arctan(x) = \frac{1}{1-x^2} \)</p></div>
+                    <div class="arccsc trigfunc"><p>\( \require{physics} \frac{d}{dx}\arccsc(x) = \frac{-1}{\abs{x}\sqrt{1-x^2}} \)</p></div>
+                    <div class="arcsec trigfunc"><p>\( \frac{d}{dx}\arcsec(x) = \frac{1}{\abs{x}\sqrt{1-x^2}} \)</p></div>
+                    <div class="arccot trigfunc"><p>\( \frac{d}{dx}\arccot(x) = \frac{-1}{1-x^2} \)</p></div>
+
+                    <!-- HYPERBOLIC -->
+                    <div class="trig-label trigfunc"><h5>Hyperbolic Functions</h5></div>
+                    <div class="sinh trigfunc"><p>\( \frac{d}{dx}\sinh(x) = \cosh(x) \)</p></div>
+                    <div class="cosh trigfunc"><p>\( \frac{d}{dx}\cosh(x) = \sinh(x) \)</p></div>
+                    <div class="tanh trigfunc"><p>\( \frac{d}{dx}\tanh(x) = \sech^{2}(x) \)</p></div>
+                    <div class="csch trigfunc"><p>\( \frac{d}{dx}\csch(x) = -\csch(x)\coth(x) \)</p></div>
+                    <div class="sech trigfunc"><p>\( \frac{d}{dx}\sech(x) = -\sech(x)\tanh(x) \)</p></div>
+                    <div class="coth trigfunc"><p>\( \frac{d}{dx}\coth(x) = -\csch^{2}(x) \)</p></div>
+
+                </div>
+            </section>
+
+            <h3>Logarithmic and Exponential Derivatives</h3>
+            <section class="log-derivatives">
+                <div class="log-rules-gridwrap">
+
+                    <!-- LABELS -->
+                    <div class="log-label trigfunc"><h5>Logarithmic Functions</h5></div>
+                    <div class="exp-label trigfunc"><h5>Exponential Functions</h5></div>
+
+                    <!-- LOGARITHMIC -->
+                    <div class="ln trigfunc"><p>\( \frac{d}{dx}\ln(x) = \frac{1}{x} \)</p></div>
+                    <div class="log trigfunc"><p>\( \frac{d}{dx}\log_{a}(x) = \frac{1}{x\ln(a)} \)</p></div>
+
+                    <!-- EXPONENTIALS -->
+                    <div class="e-to-x trigfunc"><p>\( \frac{d}{dx}e^{x} = e^{x}\)</p></div>
+                    <div class="exp trigfunc"><p>\( \frac{d}{dx}a^{x} = a^{x}\log(a) \)</p></div>
+
+                </div>
+            </section>
+
+
+            <!-- IMPLICIT DIFFERENTIATION -->
+
+
+            <!-- CURVE SKETCHING -->
+            <h3>Curve Sketching</h3>
+            <section class="curve-sketching">
+                <div class="curve-sketching-gridwrap">
+                    <div class="sketch-label"><h4>Step-by-Step Guide</h4></div>
+                    <ol class="sketch-steps">
+                        <li><h5>Function Analysis</h5>
+                            <ol class="sketch-sublist">
+                                <li>Find \((x,y)\) for all \(x-intercept(s)\) and the \(y-intercept\)</li>
+                                <li>Determine the \(Domain\) and \(Range\)</li>
+                                <li>Use Limits or Divide by Zero Error to Check for Vertical and Horizontal Asymptotes</li>
+                                <li>Take Limits to Positive and Negative Infinity to Determine End Behavior</li>
+                            </ol>
+                        </li>
+                        <li><h5>First Derivative Test</h5>
+                            <ol class="sketch-sublist">
+                                <li>Take the First Derivative</li>
+                                <li>Find all Critical Points, or Extrema, by Solving for \(x\) where \(f^{'}(x)=0\)</li>
+                                <li>Check for Increasing or Decreasing Intervals Above, Below, and Between each Extrema
+                                    <ol>
+                                        <li>\( f^{'}(x\pm\delta) \lt 0 \rightarrow \) Decreasing</li>
+                                        <li>\( f^{'}(x\pm\delta) \gt 0 \rightarrow \) Increasing</li>
+                                    </ol>
+                                </li>
+                                <li>This test is due to the fact that first derivatives only change signs at the extrema
+                                    <ol>
+                                        <li>\(+ \rightarrow - \) changes imply a Maxima</li>
+                                        <li>\(- \rightarrow + \) changes imply a Minima</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><h5>Second Derivative Test</h5>
+                            <ol class="sketch-sublist">
+                                <li>Take the Second Derivative</li>
+                                <li>Find all possible Points of Inflection by solving for \( x \) where \( f^{''}(x) = 0 \)</li>
+                                <li>Check for Concavity Above, Below and Between Points of Inflection
+                                    <ol>
+                                        <li>If \(f^{''}(x \pm \delta ) \lt 0 \rightarrow \) Concave Down</li>
+                                        <li>If \(f^{''}(x \pm \delta ) \gt 0 \rightarrow \) Concave Up</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- RELATED RATES -->
+
+        </main>
+    </body>
+</html>
